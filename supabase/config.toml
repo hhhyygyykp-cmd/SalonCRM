@@ -1,0 +1,17 @@
+# Belle Beauty Lounge — Supabase CLI config
+project_id = "wttmledvvjoqwqmiakcd"
+
+[functions.send-whatsapp]
+verify_jwt = true
+
+[functions.whatsapp-webhook]
+verify_jwt = false
+
+[functions.wallet-pass]
+verify_jwt = false
+
+[functions.automate-whatsapp-reminders]
+verify_jwt = false
+
+[functions.whatsapp-embedded-signup]
+verify_jwt = true
