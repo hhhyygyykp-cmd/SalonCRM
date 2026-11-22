@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  /* Belle Beauty Lounge — olive green brand palette */
+  --color-cream: #F6F5F1;
+  --color-blush: #EEF0EA;
+  --color-rose: #535C49;
+  --color-rose-deep: #3E4437;
+  --color-rose-soft: #C5CBB8;
+  --color-ink: #242620;
+  --color-muted: #6B7164;
+  --color-line: #DDDFD8;
+  --color-gold: #B8953B;
+  --color-gold-soft: #F3E7C7;
+  --color-premium: #1E4D8C;
+  --color-success: #3F6F5B;
+  --color-warning: #B87A2F;
+  --color-danger: #A14545;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background:
+    radial-gradient(ellipse 80% 50% at 0% 0%, rgba(83, 92, 73, 0.1), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(184, 149, 59, 0.06), transparent 45%),
+    var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5cbb8;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.35s ease-out both;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #e4e7df 25%, #f0f2ec 50%, #e4e7df 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+  border-radius: 0.75rem;
+}

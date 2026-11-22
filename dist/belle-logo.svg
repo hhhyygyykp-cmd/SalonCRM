@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" role="img" aria-label="Belle Beauty Lounge">
+  <!-- Matches Instagram wordmark: Belle + Beauty Lounge tucked above the e -->
+  <text
+    x="20"
+    y="130"
+    font-family="Georgia, 'Times New Roman', 'Cormorant Garamond', serif"
+    font-size="110"
+    font-weight="500"
+    fill="#2A2421"
+    letter-spacing="-2"
+  >Belle</text>
+  <text
+    x="355"
+    y="48"
+    font-family="Manrope, Arial, Helvetica, sans-serif"
+    font-size="18"
+    font-weight="400"
+    fill="#2A2421"
+    letter-spacing="1.5"
+  >Beauty Lounge</text>
+</svg>
